@@ -1,0 +1,15 @@
+language: php
+
+php:
+ - 7
+
+before_script:
+ - wget http://getcomposer.org/composer.phar
+ - php composer.phar install --no-interaction
+
+script:
+ - mkdir -p build/logs
+ - phpunit --coverage-clover build/logs/clover.xml
+
+after_success:
+ - travis_retry php vendor/bin/coveralls -v
