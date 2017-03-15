@@ -182,3 +182,7 @@ Outputs
 ```
 composer exec phpunit
 ```
+
+## Author
+
+Hugo Maugey [visit my website ;)](https://hugo.maugey.fr)
