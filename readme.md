@@ -180,7 +180,7 @@ Outputs
 ## Unit Tests
 
 ```
-composer exec phpunit
+phpunit --bootstrap vendor/autoload.php tests
 ```
 
 ## Author

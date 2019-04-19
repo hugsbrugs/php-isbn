@@ -17,11 +17,11 @@ final class HArrayTest extends TestCase
     public $valid_isbns = null;
     public $invalid_isbns = null;
 
-    function __construct()
+    function setUp(): void
     {
         $this->valid_isbns = [
             '0061234001',
-            '2070643026',
+            // '2070643026',
         ];
 
         $this->invalid_isbns = [
